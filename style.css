@@ -21,4 +21,8 @@
     --theme_fg_dark_one: #ffd523;
     --theme_fg_dark_two: #b2b1b9;
     --theme_fg_dark_three: ;
+
+    /* Fonts */
+    --heading_font: 'Zen Tokyo Zoo', cursive;
+    --content_font: 'Raleway', sans-serif; 
 }

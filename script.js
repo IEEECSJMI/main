@@ -54,6 +54,9 @@ $(".carousel").owlCarousel({
       nav: true,
     },
   },
+  smartSpeed: 700,
+  responsiveRefreshRate: 50
+  // fluidSpeed: 700
 });
 
 /************* CAROUSEL THINGY *************/

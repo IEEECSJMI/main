@@ -32,23 +32,27 @@ $(document).ready(function () {
 $(".carousel").owlCarousel({
   margin: 20,
   loop: true,
-  autoplay: false,
-  autoplayTimeout: 2000, //2s
+  stagePadding: 10,
+  autoplay: true,
+  autoplayTimeout: 4000, //2s
   autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
-      nav: false,
+      nav: true,
     },
     600: {
       items: 1,
-      nav: false,
+      nav: true,
     },
     1000: {
       items: 1,
-      nav: false,
+      nav: true,
     },
   },
+  smartSpeed: 700,
+  responsiveRefreshRate: 50
+  // fluidSpeed: 700
 });
 
 /************* CAROUSEL THINGY END *************/

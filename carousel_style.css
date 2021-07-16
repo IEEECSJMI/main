@@ -15,6 +15,8 @@ body {
 }
 
 .carousel .card {
+    position: relative;
+    height: 600px !important;
     line-height: 250px;
     text-align: center;
     color: darkblue;
@@ -22,7 +24,7 @@ body {
     font-weight: 400;
     margin: 20px 0;
     border-radius: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.664);
 }
 
 .carousel .card-1 {
@@ -67,4 +69,15 @@ body {
 .owl-dot:active {
     background: #869791 !important;
     border: 2px solid #869791 !important;
+}
+
+
+.card-photo img {
+    position: absolute;
+    width: 250px !important;
+    height: auto;
+    border-radius: 50%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
 }

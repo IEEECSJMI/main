@@ -4,5 +4,6 @@
 
 .teamsIntro {
     height: 70vh;
+    margin-bottom: 5vh;
     background-color: var(--teamsBgColour)
 }

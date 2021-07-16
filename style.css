@@ -29,3 +29,6 @@
 body {
   background-color: #000000;
 }
+.fade-bg{
+    opacity: 0.5;
+}

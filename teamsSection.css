@@ -1,0 +1,8 @@
+:root {
+    --teamsBgColour: yellow;
+}
+
+.teamsIntro {
+    height: 70vh;
+    background-color: var(--teamsBgColour)
+}

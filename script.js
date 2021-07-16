@@ -22,6 +22,9 @@ $(document).ready(function () {
   $(".button").on("click tap", function () {
     toggleSidebar();
   });
+  $(".sidebar-item").on("click tap", function () {
+    toggleSidebar();
+  });
 
 });
 

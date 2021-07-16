@@ -13,7 +13,7 @@
   width: 400px;
   position: fixed;
   top: 0;
-  /* z-index: 2; */
+  z-index: 10;
   right: 0;
   background-color: #ffffff;
   /* opacity: 0.5; */
@@ -27,10 +27,10 @@
   margin: 10px auto;
 }
 
-.button {
+.nav-right .button {
   cursor: pointer;
   position: fixed;
-  z-index: 100 !important;
+  z-index: 1200;
   width: auto;
   top: 1em;
   right: 1em;
@@ -48,7 +48,7 @@
 }
 
 .nav-right.visible-xs {
-  z-index: 3;
+  z-index: 1200;
 }
 
 .hidden-xs {
@@ -188,20 +188,10 @@ nav {
   width: 100%;
 }
 
-/* @media (min-width: 480px) {
-  .nav-list {
-    display: block;
-  }
-} */
 
-/* @media (min-width: 768px) {
-  .nav-right {
-    position: absolute;
+
+@media (max-width: 768px) {
+  .sidebar{
+    max-width: 80vw;
   }
-  .hidden-xs {
-    display: block;
-  }
-  .visible-xs {
-    display: none;
-  }
-} */
+}

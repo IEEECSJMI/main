@@ -24,32 +24,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="teamsSection.css">
 
+    <!-- Typewriter CDN -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <!-- Page Title -->
     <title>Document</title>
 </head>
 <body>
     
-    <div class="container">
+    <div class="container-fluid">
         <!-- ML Team -->
-        <div class="container teamsIntro">
-            <h2>ML</h2>
-            <button class="btn">Slide in DMs</button>
+        <div class="container-fluid row teamsIntro">
+            <div class="col-8">
+                <h2>ML</h2>
+            </div>
+            <div class="col-4">
+                <div class="row" id="mlTypewriter">
+                    <p id="typewriterTarget"></p>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-primary" id="mlTeamBtn">Team Members</button>
+                </div>
+            </div>
         </div>
-        <div class="teamMembers">
-
+        <div class="container-fluid row teamMembers" id="mlTeam">
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
         </div>
         <!-- DSA Team -->
-        <div class="container teamsIntro">
+        <div class="container-fluid row teamsIntro">
             <h2>DSA</h2>
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+            </div>
+            <button class="btn btn-outline-primary" id="dsaTeamBtn">Team Members</button>
         </div>
-        <div class="teamMembers">
-            
+        <div class="container-fluid row teamMembers" id="dsaTeam">
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
         </div>
         <!-- WebD Team -->
-        <div class="container teamsIntro">
+        <!-- <div class="container teamsIntro">
             <h2>WebD</h2>
         </div>
-        <div class="teamMembers">
+        <div class="teamMembers"> -->
             
         </div>
     </div>
@@ -64,6 +90,7 @@
     <!-- Coder Defined scripts -->
     <script src="script.js"></script>
     <script src="teamSection.js"></script>
+    <script src="typewriter.js"></script>
     
 </body>
 </html>

@@ -1,15 +1,26 @@
 :root {
     --teamsBgColour: yellow;
-    --teamMembersBgColour: grey;
+    --teamMembersBgColour: black;
 }
 
 .teamsIntro {
     height: 70vh;
     margin-top: 5vh;
-    background-color: var(--teamsBgColour)
+    background-color: var(--teamsBgColour);
 }
 
 .teamMembers {
     height: 20vh;
     background-color: var(--teamMembersBgColour);
+    padding: 1vh;
+}
+
+.teamMemberImg {
+    height: 100%;
+    width: auto;
+    border-radius: 100%;
+}
+
+#mlTypewriter {
+    height: 80%;
 }

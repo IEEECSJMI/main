@@ -36,21 +36,22 @@ $(document).ready(function () {
 $(".carousel").owlCarousel({
   margin: 20,
   loop: true,
+  stagePadding: 10,
   autoplay: false,
   autoplayTimeout: 2000, //2s
   autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
-      nav: false,
+      nav: true,
     },
     600: {
       items: 1,
-      nav: false,
+      nav: true,
     },
     1000: {
       items: 1,
-      nav: false,
+      nav: true,
     },
   },
 });

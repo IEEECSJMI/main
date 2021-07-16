@@ -26,3 +26,10 @@
     --heading_font: 'Zen Tokyo Zoo', cursive;
     --content_font: 'Raleway', sans-serif; 
 }
+body{
+    height: 150vh;
+    background-color: rgb(0, 0, 0);
+}
+a{
+    color: #ffd523;
+}

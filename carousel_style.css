@@ -12,17 +12,16 @@ body {
 .wrapper .carousel {
     max-width: 80%;
     margin: auto;
-    padding: 0 20px;
-
+    padding: 3.125rem 20px;
+    aspect-ratio: 16/9;
 }
 
 .carousel .card {
-    height: 600px !important;
+    height: 70vh !important;
     line-height: 250px;
     text-align: center;
     color: darkblue;
     font-size: 100px;
-    font-weight: 400;
     margin: 20px 0;
     border-radius: 20px;
     box-shadow: 0 7px 16px rgba(195, 195, 195, 0.89);
@@ -76,7 +75,6 @@ body {
     text-align: center;
     z-index: 100;
     font-size: 100px;
-
     color: yellowgreen;
 }
 
@@ -96,11 +94,12 @@ body {
 
 .card-photo img {
     position: absolute;
-    width: 15.625rem !important;
+    width: 13.0208vw !important;
     height: auto;
     border-radius: 50%;
     top: 50%;
     left: 10%;
     transform: translate(-5%, -50%);
+    border: 1px solid black;
     /*translate(horizontally,vertically)*/
 }

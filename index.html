@@ -29,7 +29,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
         <!-- Owl-Carousel Stylesheet -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -270,32 +270,21 @@
         </section>
 
 
-    <section id="contact-us">
-        <div class="contact-us-div ">
-            <button id="contact-btn" class="btn contact-btn ">Contact Us</button>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <!-- <img src="..." class="rounded mr-2" alt="..."> -->
-                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="toast-body">
-                  Message sent successfully!
-                </div>
-              </div>
-            <form class="d-none animate__animated "  action="">
-               
+      <section id="contact-us">
+            <div class="contact-us-div ">
+                <button id="contact-btn" class="btn contact-btn ">Contact Us</button>
+                <form class="d-none animate__animated "  action="">
                 
-                <input id="contact-subject" type="text" placeholder="Name">
-                <input id="contact-email" type="email" placeholder="Email">
-                <textarea id="contact-body"  cols="30" rows="6"></textarea>
-            <button onclick="sendPostContent()" type="button" id="contact-submit-btn" class="btn contact-btn  "><span class="material-icons-outlined">send</span></button>
-            </form>
-           
-        </div>
-    </section>
-
+                    
+                    <input id="contact-subject" type="text" placeholder="Name">
+                    <input id="contact-email" type="email" placeholder="Email">
+                    <textarea id="contact-body"  cols="30" rows="6"></textarea>
+                <button onclick="sendPostContent()" type="button" id="contact-submit-btn" class="btn contact-btn  "><span class="material-icons-outlined">send</span></button>
+                </form>
+            
+            </div>
+        </section>
+        <div class="toast-card card animate__animated d-none">Message sent successfully!</div>
         </footer>
 
         <!-- JQuery Script -->

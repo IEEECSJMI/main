@@ -83,3 +83,17 @@ transition: 1s;
   border-radius: 0;
 
 }
+
+/* toast thingy */
+.toast-card{
+  width: fit-content;
+  padding: 2px 10px;
+  color: #96f19e;
+  border-radius: 10px;
+  background-color: #22241b;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1200;
+}

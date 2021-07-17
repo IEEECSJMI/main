@@ -1,9 +1,9 @@
-const code = document.querySelectorAll("code")
+const code = document.querySelectorAll("code");
 for (let i = 0; i < code.length; i++) {
   new TypeIt(code[i], {
     speed: 50,
     loop: false,
-    startDelay: 50
+    startDelay: 50,
   }).go();
 }
 
@@ -60,7 +60,7 @@ $(".carousel").owlCarousel({
     },
   },
   smartSpeed: 700,
-  responsiveRefreshRate: 50
+  responsiveRefreshRate: 50,
   // fluidSpeed: 700
 });
 
@@ -100,12 +100,23 @@ function sendPostContent() {
   if (content.length > 0) {
     axios
       .post("https://ancient-ravine-25714.herokuapp.com/sendmail", null, {
-        params: data
+        params: data,
       })
-      .then(() => console.log("sent"))
+      .then(() => {
+        $(".toast-card").removeClass("d-none");
+        $(".toast-card").addClass("animate__fadeIn");
+        $(".toast-card").addClass("animate__fadeOut animate__delay-1s");
+        setTimeout(()=>{
+        $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");
+        $(".toast-card").addClass("d-none");
+        },1000)
+
+        
+      })
       .catch((err) => console.log(err));
   }
-  $('.toast').toast("show")
 
   toggleContactUs();
+
+  // toast thingy
 }

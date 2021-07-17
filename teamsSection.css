@@ -1,18 +1,36 @@
 :root {
-    --teamsBgColour: #FFD523;
-    --teamMembersBgColour: black;
+    --teamsBgColour: #ffd523;
+    --teamMembersBgColour: rgb(0, 0, 0,0.6);
 }
-
-.teamsIntro {
+body{
+    background: #2c2e43;
+}
+.page{
     height: 100vh;
-    margin-top: 5vh;
+}
+.teamsIntro {
+
+    height: 80vh;
+    margin: 10vh 0;
     background-color: var(--teamsBgColour);
 }
-
+.col-8{
+    height: 80vh;
+}
+.col-4{
+    height: 80vh;
+}
 .teamMembers {
     height: 20vh;
+    width: 60vw;
+    border-radius: 8px;
     background-color: var(--teamMembersBgColour);
     padding: 1vh;
+    margin-top: -20vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    /* opacity: 0.5; */
 }
 
 .teamMemberImg {

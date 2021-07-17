@@ -28,6 +28,7 @@
 }
 body {
   background-color: #000000;
+  font-family: "Raleway";
 }
 .fade-bg{
     opacity: 0.5;
@@ -36,9 +37,14 @@ input:focus, textarea:focus, select:focus{
   outline: none;
 }
 
+.animate-height-zero{
+width: 0;
+transition: 1s;
+}
+
 /* contact us */
 .contact-us-div{
-  font-size: 1.3rem;
+  /* font-size: 1rem; */
   text-align: center;
   margin: auto;
   width: fit-content;
@@ -46,8 +52,6 @@ input:focus, textarea:focus, select:focus{
 .contact-us-div form{
  width: min-content;
   max-width: 65ch;
-
-
 
 }
 .contact-us-div form input{

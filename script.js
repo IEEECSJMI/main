@@ -70,15 +70,15 @@ $(".carousel").owlCarousel({
 let isContactFormOpen = false;
 function toggleContactUs() {
   if (isContactFormOpen) {
-    $("#contact-us form").removeClass("animate__fadeIn");
-    $("#contact-us form").addClass("animate__fadeOut");
+    $("#contact-us form").removeClass("animate__flipInX");
+    $("#contact-us form").addClass("animate__flipOutX");
     setTimeout(function () {
-      $("#contact-us form").addClass("d-none");
+      $("#contact-us form").addClass("animate-height-zero");
     }, 1000);
     isContactFormOpen = false;
   } else {
-    $("#contact-us form").removeClass("animate__fadeOut d-none");
-    $("#contact-us form").addClass("animate__fadeIn");
+    $("#contact-us form").removeClass("animate__flipOutX d-none");
+    $("#contact-us form").addClass("animate__flipInX");
     isContactFormOpen = true;
   }
 }
@@ -102,6 +102,7 @@ function sendPostContent() {
       .then(() => console.log("sent"))
       .catch((err) => console.log(err));
   }
+  $('.toast').toast("show")
 
   toggleContactUs();
 }

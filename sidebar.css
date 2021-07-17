@@ -24,7 +24,7 @@
   height: 5px;
   width: 50px;
   background-color: #ffda33;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 .nav-right .button {
@@ -76,11 +76,11 @@
 }
 
 .button.active .top {
-  -webkit-transform: translateY(15px) rotateZ(45deg);
-  -moz-transform: translateY(15px) rotateZ(45deg);
-  -ms-transform: translateY(15px) rotateZ(45deg);
-  -o-transform: translateY(15px) rotateZ(45deg);
-  transform: translateY(15px) rotateZ(45deg);
+  -webkit-transform: translateY(11px) rotateZ(45deg);
+  -moz-transform: translateY(11px) rotateZ(45deg);
+  -ms-transform: translateY(11px) rotateZ(45deg);
+  -o-transform: translateY(11px) rotateZ(45deg);
+  transform: translateY(11px) rotateZ(45deg);
 }
 
 .button.active .bottom {
@@ -185,6 +185,10 @@
 .sidebar-anchor:hover {
   color: #ffd523;
   transition: 0.7s;
+}
+.button .bar{
+  max-width: 32px;
+  max-height: 32px;
 }
 
 @media (max-width: 768px) {

@@ -85,65 +85,76 @@
             </nav>
         </main>
 
-        <main class="main">
-            <div class="master">
-
-                <div class="code-card">
-                    <i class="fa fa-gear"></i>&nbsp;
-                    Machine Learning / AI
-                    <br>
-                    <code>
-                        <span class="const">import</span>
-                        <span class="package">tensorflow</span> as <span class="name-require">tf</span>
-                        <br>
-                        <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">model</span> = <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">Sequential</span>()
-                        <br>
-                        <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">model</span>.<span class="name-require">add</span> ( <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">layers</span>.<span class="name-require">GRU</span> ( <span class="package">32</span>, <span class="require">input_shape</span> = ( <span class="package">None</span>, <span class="require">float_data</span>.<span class="name-require">shape</span><span class="dot">[-1]</span> ))) ..
-                    </code>
+        <div class="main row">
+            
+            <div class="col-md-6">
+                <div class="left">
+                    <img src="img/logo.png" class="brand-logo" alt="">
+                    <div class="intro-description">
+                    IEEE CS is a technology driven society established to empower people to bring about changes in the community. We are expanding group of professionals that lead in computing and connecting members worldwide. Our society enables people to advance in technology by delivering tools for individuals at all stages of their professional careers.<br>We aim to build a strong learning environment where peeople come forward to co-create and have an overall development of their skills.
                 </div>
-
-                <div class="code-card">
-                    <i class="fa fa-gear"></i>&nbsp;
-                    Data-Structures / Algorithms
-                    <br>
-                    <code>
-                        <span class="const">string</span> <span class="package">topo_sort</span> (<span class="const">list</span> &lt;<span class="require">int</span>&gt;* <span class="name-require">ls</span>, <span class="const">int</span> <span class="name-require">k</span>) {
-                        <br>
-                        &nbsp;&nbsp;<span class="const">char</span> <span class="package">arr</span>[<span class="name-require">k</span>];
-                         <span class="const">stack</span> &lt;<span class="require">int</span>&gt; <span class="package">s</span>;
-                        <br>
-                        &nbsp;&nbsp;<span class="const">set</span> &lt;<span class="package">int</span>&gt; <span class="require">st</span>;
-                         <span class="const">int</span> <span class="package">ind</span> = <span class="require">k</span>-<span class="name-require">1</span>;
-                        <br>
-                        &nbsp;&nbsp;<span class="const">for</span> (<span class="name-require">int</span> <span class="require">i</span> = <span class="require">k</span>-<span class="require">1</span>; <span class="require">i</span> >= <span class="const">0</span>; <span class="name-require">i</span>--) {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="const">if </span> (<span class="require">st</span>.<span class="name-require">find</span>(<span class="require">i</span>) == <span class="require">st</span>.<span class="name-require">end</span>()) { ..
-                    </code>
                 </div>
-
-                <div class="code-card">
-                    <i class="fa fa-gear"></i>&nbsp;
-                    Web Development
-                    <br>
-                    <code>
-                        <span class="const">const</span> <span class="package">express</span> = <span
-                            class="require">require</span>(<span class="name-require">'express'</span>);
-                        <br>
-                        <span class="const">const</span> <span class="package">app</span> = <span
-                            class="require">express</span>();
-                        <br>
-                        <span class="package">app</span>.<span class="dot">listen</span>(<span
-                            class="require">process.env.PORT</span>, () <span class="package">=> </span>{
-                        <br>
-                        &nbsp;&nbsp;<span class="package">console</span>.<span class="dot">log</span>(<span
-                            class="name-require">'server started'</span>);
-                        <br>
-                        }); ..
-                    </code>
-                </div>
-
             </div>
-        </main>
+
+            <div class="col-md-6">
+                <div class="master">
+                    <div class="code-card">
+                        <i class="fa fa-gear"></i>&nbsp;
+                        Machine Learning / AI
+                        <br>
+                        <code>
+                            <span class="const">import</span>
+                            <span class="package">tensorflow</span> as <span class="name-require">tf</span>
+                            <br>
+                            <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">model</span> = <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">Sequential</span>()
+                            <br>
+                            <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">model</span>.<span class="name-require">add</span> ( <span class="package">tf</span>.<span class="require">keras</span>.<span class="dot">layers</span>.<span class="name-require">GRU</span> ( <span class="package">32</span>, <span class="require">input_shape</span> = ( <span class="package">None</span>, <span class="require">float_data</span>.<span class="name-require">shape</span><span class="dot">[-1]</span> ))) ..
+                        </code>
+                    </div>
+    
+                    <div class="code-card">
+                        <i class="fa fa-gear"></i>&nbsp;
+                        Data-Structures / Algorithms
+                        <br>
+                        <code>
+                            <span class="const">string</span> <span class="package">topo_sort</span> (<span class="const">list</span> &lt;<span class="require">int</span>&gt;* <span class="name-require">ls</span>, <span class="const">int</span> <span class="name-require">k</span>) {
+                            <br>
+                            &nbsp;&nbsp;<span class="const">char</span> <span class="package">arr</span>[<span class="name-require">k</span>];
+                             <span class="const">stack</span> &lt;<span class="require">int</span>&gt; <span class="package">s</span>;
+                            <br>
+                            &nbsp;&nbsp;<span class="const">set</span> &lt;<span class="package">int</span>&gt; <span class="require">st</span>;
+                             <span class="const">int</span> <span class="package">ind</span> = <span class="require">k</span>-<span class="name-require">1</span>;
+                            <br>
+                            &nbsp;&nbsp;<span class="const">for</span> (<span class="name-require">int</span> <span class="require">i</span> = <span class="require">k</span>-<span class="require">1</span>; <span class="require">i</span> >= <span class="const">0</span>; <span class="name-require">i</span>--) {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="const">if </span> (<span class="require">st</span>.<span class="name-require">find</span>(<span class="require">i</span>) == <span class="require">st</span>.<span class="name-require">end</span>()) { ..
+                        </code>
+                    </div>
+    
+                    <div class="code-card">
+                        <i class="fa fa-gear"></i>&nbsp;
+                        Web Development
+                        <br>
+                        <code>
+                            <span class="const">const</span> <span class="package">express</span> = <span
+                                class="require">require</span>(<span class="name-require">'express'</span>);
+                            <br>
+                            <span class="const">const</span> <span class="package">app</span> = <span
+                                class="require">express</span>();
+                            <br>
+                            <span class="package">app</span>.<span class="dot">listen</span>(<span
+                                class="require">process.env.PORT</span>, () <span class="package">=> </span>{
+                            <br>
+                            &nbsp;&nbsp;<span class="package">console</span>.<span class="dot">log</span>(<span
+                                class="name-require">'server started'</span>);
+                            <br>
+                            }); ..
+                        </code>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
 
 
 

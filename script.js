@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   function toggleSidebar() {
     isSidebarActive = $(".nav-right .button").hasClass("active");
-    console.log(isSidebarActive);
+    // console.log(isSidebarActive);
     if (isSidebarActive) {
       $(".button").removeClass("active");
       $(".sidebar").removeClass("animate__slideInRight hidden-xs");

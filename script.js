@@ -75,7 +75,7 @@ function toggleContactUs() {
     $("#contact-us form").removeClass("animate__flipInX");
     $("#contact-us form").addClass("animate__flipOutX");
     setTimeout(function () {
-      $("#contact-us form").addClass("animate-height-zero");
+      $("#contact-us form").addClass("d-none");
     }, 1000);
     isContactFormOpen = false;
   } else {

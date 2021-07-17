@@ -1,3 +1,5 @@
+/************ OVERALL WRAPPER SETUP ************/
+
 .wrapper {
     width: 100%;
     position: relative;
@@ -9,9 +11,11 @@
     padding: 12vh 20px;
 }
 
+/************ CARD SETTINGS ************/
+
 .carousel .card {
     height: 60vh !important;
-    line-height: 250px;
+    line-height: 30%;
     text-align: center;
     color: rgba(255, 255, 255, 0.700);
     font-size: 100px;
@@ -25,8 +29,10 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #434343, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
+
+/************ NAV DOTS ************/
 
 .owl-dots {
     text-align: center;
@@ -50,6 +56,8 @@
     background: #b2b1b9 !important;
     border: 2px solid #b2b1b9 !important;
 }
+
+/************ NAV BUTTONS ************/
 
 .owl-nav {
     display: block;
@@ -77,14 +85,37 @@
     color: blue;
 }
 
+/************ CARD PHOTO ************/
+
 .card-photo img {
     position: absolute;
     width: 10.0208vw !important;
     height: auto;
     border-radius: 50%;
-    top: 40%;
-    left: 6%;
-    transform: translate(-3%, -40%);
+    top: 35%;
+    left: 4%;
+    transform: translate(0%, -40%);
     border: 1px solid black;
     /*translate(horizontally,vertically)*/
+}
+
+/************ CARD NAME ************/
+.carousel .card-name h2 {
+    font-size: 1.5vw;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 60%;
+    left: 9%;
+    transform: translate(-12%, 0);
+}
+
+.carousel .card-content p {
+    width: 50vw;
+    margin: 0 10px;
+    font-size: 1vw;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+    /* border: 1px solid white; */
 }

@@ -17,18 +17,17 @@
     height: 60vh !important;
     line-height: 30%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.700);
+    color: rgb(255, 255, 255);
     font-size: 6.25rem;
     margin: 1.25rem 0;
     border-radius: 20px;
-    border: 3px solid #b2b1b9;
-    /* box-shadow: 0px 10px 16px rgba(132, 133, 131, 0.924); */
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #434343, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #434343, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.10);
+    /* box-shadow: 0 8px 10px 0 rgba(103, 111, 216, 0.37); */
+    backdrop-filter: blur(10.0px);
+    -webkit-backdrop-filter: blur(10.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 
@@ -43,7 +42,7 @@
     width: 2vh;
     height: 2vh;
     margin: 0.3125rem 7px;
-    border: 3px solid #b2b1b9 !important;
+    border: 3px solid rgb(255, 255, 255) !important;
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -53,8 +52,8 @@
 
 .owl-dot:hover,
 .owl-dot.active {
-    background: #b2b1b9 !important;
-    border: 2px solid #b2b1b9 !important;
+    background: rgb(255, 255, 255) !important;
+    border: 2px solid rgb(255, 255, 255) !important;
 }
 
 /************ NAV BUTTONS ************/
@@ -64,7 +63,7 @@
     text-align: center;
     z-index: -100;
     font-size: 6vw;
-    color: #b2b1b9;
+    color: rgb(255, 255, 255);
 }
 
 .owl-prev {
@@ -81,9 +80,6 @@
     transform: translate(-50%, -40%);
 }
 
-.owl-prev:hover {
-    color: blue;
-}
 
 /************ CARD PHOTO ************/
 

@@ -42,16 +42,14 @@ select:focus {
   outline: none;
 }
 
-.animate-height-zero{
-width: 0;
-transition: 1s;
-}
+
 
 /* contact us */
 .contact-us-div{
   /* font-size: 1rem; */
   text-align: center;
   margin: auto;
+  height: min-content;
   width: fit-content;
 }
 

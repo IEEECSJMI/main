@@ -1,0 +1,89 @@
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .carousel {
+    max-width: 80%;
+    margin: auto;
+    padding: 3.125rem 20px;
+    aspect-ratio: 16/9;
+}
+
+.carousel .card {
+    height: 70vh !important;
+    line-height: 250px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.700);
+    font-size: 100px;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: 0;
+    /* box-shadow: 0px 10px 16px rgba(132, 133, 131, 0.924); */
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    width: 20px;
+    height: 20px;
+    margin: 5px 7px;
+    border: 3px solid #b2b1b9 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: #b2b1b9 !important;
+    border: 2px solid #b2b1b9 !important;
+}
+
+.owl-nav {
+    display: block;
+    text-align: center;
+    z-index: -100;
+    font-size: 100px;
+    color: #b2b1b9;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 00%;
+    transform: translate(-50%, -50%);
+
+}
+
+.owl-next {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.card-photo img {
+    position: absolute;
+    width: 13.0208vw !important;
+    height: auto;
+    border-radius: 50%;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -50%);
+    border: 1px solid black;
+    /*translate(horizontally,vertically)*/
+}

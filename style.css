@@ -1,0 +1,72 @@
+/* Styles for all elements */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Root CSS variables */
+:root {
+  /* Theme background colors */
+  --theme_bg_light: ;
+  --theme_bg_dark: ;
+
+  /* Foreground (fg) colors for light theme  */
+  --theme_fg_light_one: ;
+  --theme_fg_light_two: ;
+  --theme_fg_light_three: ;
+
+  /* Foreground (bg) colors for dark theme  */
+  --theme_fg_dark_one: #ffd523;
+  --theme_fg_dark_two: #b2b1b9;
+  --theme_fg_dark_three: ;
+
+  /* Fonts */
+  --heading_font: "Zen Tokyo Zoo", cursive;
+  --content_font: "Raleway", sans-serif;
+}
+body {
+  background-color: #000000;
+}
+.fade-bg{
+    opacity: 0.5;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+/* contact us */
+.contact-us-div{
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+}
+.contact-us-div form{
+ width: min-content;
+  max-width: 65ch;
+
+
+
+}
+.contact-us-div form input{
+  width: 100%;
+  margin: 1rem 0 ;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.contact-us-div form textarea{
+  background-color: white;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 5px;
+
+}
+#contact-us button.contact-btn{
+  margin: 1rem auto;
+  background-color: #ffd523;
+  border-radius: 0;
+  
+}

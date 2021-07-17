@@ -1,10 +1,10 @@
 const code = document.querySelectorAll("code")
-for(let i=0; i<code.length; i++){
-    new TypeIt(code[i], {
-        speed: 50,
-        loop: false,
-        startDelay: 50
-    }).go();    
+for (let i = 0; i < code.length; i++) {
+  new TypeIt(code[i], {
+    speed: 50,
+    loop: false,
+    startDelay: 50
+  }).go();
 }
 
 // navbar thingy
@@ -42,7 +42,7 @@ $(".carousel").owlCarousel({
   margin: 20,
   loop: true,
   stagePadding: 10,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 4000, //2s
   autoplayHoverPause: true,
   responsive: {
@@ -68,6 +68,7 @@ $(".carousel").owlCarousel({
 
 // Contact us thingy
 let isContactFormOpen = false;
+
 function toggleContactUs() {
   if (isContactFormOpen) {
     $("#contact-us form").removeClass("animate__flipInX");
@@ -98,7 +99,9 @@ function sendPostContent() {
   };
   if (content.length > 0) {
     axios
-      .post("https://ancient-ravine-25714.herokuapp.com/sendmail", null, { params: data })
+      .post("https://ancient-ravine-25714.herokuapp.com/sendmail", null, {
+        params: data
+      })
       .then(() => console.log("sent"))
       .catch((err) => console.log(err));
   }

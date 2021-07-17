@@ -1,3 +1,4 @@
+// Typing effect in cards
 const code = document.querySelectorAll("code")
 for(let i=0; i<code.length; i++){
     new TypeIt(code[i], {

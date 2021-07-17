@@ -13,7 +13,7 @@ $("#dsaTeamBtn").click(function(){
 // This part is for the live-typing effect on the desktop of ML team
 // var app = $("#typewriterTarget");
 var app = document.getElementById('typewriterTarget');
-
+const mlCode = "import tensorflow as tf\ntf.keras.model = tf.keras.Sequential()\ntf.keras.model.add(tf.keras.layers.GRU(32, input_shape=(None, float_data.shape[-1])))\ntf.keras.model.add(tf.keras.layers.Dense(1))\ntf.keras.model.compile(optimizer= tf.keras.optimizers.RMSprop(), loss='mae')";
 var typewriter = new Typewriter(app, {
     loop: true
 });

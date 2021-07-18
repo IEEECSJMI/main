@@ -1,25 +1,31 @@
 :root {
     --teamsBgColour: #ffd523;
-    --teamMembersBgColour: rgb(0, 0, 0,0.6);
+    --teamMembersBgColour: rgb(0, 0, 0, 0.6);
 }
-body{
-    background: #2c2e43;
+
+body {
+    /* background: #2c2e43; */
 }
-.page{
+
+.page {
     height: 100vh;
 }
+
 .teamsIntro {
 
     height: 80vh;
     margin: 10vh 0;
     background-color: var(--teamsBgColour);
 }
-.col-8{
+
+.col-8 {
     height: 80vh;
 }
-.col-4{
+
+.col-4 {
     height: 80vh;
 }
+
 .teamMembers {
     height: 20vh;
     width: 60vw;
@@ -42,8 +48,8 @@ body{
 #mlTypewriter {
     height: 80%;
 }
-  
-  
+
+
 .terminal-window {
     text-align: left;
     width: 100%;
@@ -51,35 +57,35 @@ body{
     border-radius: 10px;
     position: relative;
 }
-  
-  .terminal-window header {
+
+.terminal-window header {
     background: #E0E8F0;
     height: 30px;
     border-radius: 8px 8px 0 0;
     padding-left: 10px;
-  }
-  
-  .terminal-window header .button {
+}
+
+.terminal-window header .button {
     width: 12px;
     height: 12px;
     margin: 10px 4px 0 0;
     display: inline-block;
     border-radius: 8px;
-  }
-  
-  .terminal-window header .button.green {
+}
+
+.terminal-window header .button.green {
     background: #3BB662;
-  }
-  
-  .terminal-window header .button.yellow {
+}
+
+.terminal-window header .button.yellow {
     background: #E5C30F;
-  }
-  
-  .terminal-window header .button.red {
+}
+
+.terminal-window header .button.red {
     background: #E75448;
-  }
-  
-  .terminal-window section.terminal {
+}
+
+.terminal-window section.terminal {
     color: white;
     font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
     font-size: 11pt;
@@ -91,30 +97,65 @@ body{
     top: 30px;
     bottom: 0;
     overflow: auto;
-  }
-  
-  .terminal-window section.terminal .typed-cursor {
-      opacity: 1;
-      -webkit-animation: blink 0.7s infinite;
-      -moz-animation: blink 0.7s infinite;
-      animation: blink 0.7s infinite;
-  }
-  @keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-  }
-  @-webkit-keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-  }
-  @-moz-keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-  }
-  
-  .terminal-data { display: none; }
-  .terminal-window .gray { color: gray; }
-  .terminal-window .green { color: green;}
+}
+
+.terminal-window section.terminal .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.terminal-data {
+    display: none;
+}
+
+.terminal-window .gray {
+    color: gray;
+}
+
+.terminal-window .green {
+    color: green;
+}

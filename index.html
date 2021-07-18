@@ -18,9 +18,14 @@
         <!-- Font Awesome icons CDN 4.7.0 -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+ 
+
+    <!-- Typewriter CDN -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <!-- Bootstrap CSS CDN v5.0.2 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
         <!-- Type it -->
         <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
@@ -47,6 +52,8 @@
         <link rel="stylesheet" href="sidebar.css" />
         <link rel="stylesheet" href="carousel_style.css" />
         <link rel="stylesheet" href="style_landing_page.css">
+    <link rel="stylesheet" href="teamsSection.css">
+      
 
         <!-- Page Title -->
         <title>IEEE CS JMI || Student Chapter</title>
@@ -114,6 +121,7 @@
                         </code>
                     </div>
     
+
                     <div class="code-card">
                         <i class="fa fa-gear"></i>&nbsp;
                         Data-Structures / Algorithms
@@ -158,7 +166,93 @@
             </div>
         </div>
 
-
+ <!-- Teams Section -->
+    <section class="container-fluid">
+        <!-- ML Team -->
+        <section class="page">
+        <div class="container-fluid row teamsIntro">
+            <div class="col-8">
+                <h2>ML</h2>
+            </div>
+            <!-- The section on the right which contains the desktop with terminal -->
+            <div class="col-4">
+                <!-- <div class="row" id="mlTypewriter">
+                    <p id="typewriterTarget"></p>
+                </div> -->
+                <div class="terminal-window row">
+                    <header>
+                      <div class="button green"></div>
+                      <div class="button yellow"></div>
+                      <div class="button red"></div>
+                    </header>
+                    <section class="terminal">
+                      <div class="history"></div>
+                      <span class="prompt" id="typewriterTarget"></span>
+                      <span class="typed-cursor"></span>
+                      
+                    </section>
+                  </div>
+                  <!-- data -->
+                    <div class="terminal-data mimik-run-output">
+                   <br>Found 1 feature<br>
+                   ----------------------------------------------<br>
+                   Feature: Bottles  <span class="gray"># ./features/bottles.feature</span><br><br> 
+                  
+                   &nbsp;&nbsp;Scenario: A bottle falls from the wall<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">Given 100 green bottles are standing</span><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">when 1 green bottle accidentally falls</span><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">then there are 99 green bottles standing</span><br>
+                   <br>
+                      <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+                  &nbsp;&nbsp;Features&nbsp;&nbsp;&nbsp;Scenarios&nbsp;&nbsp;&nbsp;Steps&nbsp;&nbsp;&nbsp;Passed&nbsp;&nbsp;&nbsp;Failed<br>
+                      <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+                  &nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓ 4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0      <br>
+                    <br>
+                  &nbsp;&nbsp;Completed 1 feature in 0.01s<br>
+                    <br>
+                  </div>
+                  
+                <div class="row">
+                    <button class="btn btn-outline-primary" id="mlTeamBtn">Team Members</button>
+                </div>
+            </div>
+            <!-- Images of the ML team members -->
+            <div class="container-fluid row teamMembers" id="mlTeam">
+                <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+                <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+                <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+                <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            </div>
+        </div>
+        </section>
+        <!-- DSA Team -->
+        <div class="container-fluid row teamsIntro">
+            <h2>DSA</h2>
+            <!-- This div contains the show off code -->
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, nihil ab, animi officiis aspernatur quis culpa dolor perferendis dignissimos laboriosam voluptate ipsam corporis odit maxime sit quod, molestias quae!
+            </div>
+            <button class="btn btn-outline-primary" id="dsaTeamBtn">Team Members</button>
+        </div>
+        <!-- Images of the DSA team members -->
+        <div class="container-fluid row teamMembers" id="dsaTeam">
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+            <img class="teamMemberImg" src="images/TahirDP.png" alt="" />
+        </div>
+        <!-- WebD Team -->
+        <!-- <div class="container teamsIntro">
+            <h2>WebD</h2>
+        </div>
+        <div class="teamMembers"> -->
+            
+        </div>
+    </section>
 
         <!-- Carousel -->
         <section id="heads">
@@ -419,7 +513,11 @@
 
         <!-- User Defined scripts -->
         <script src="script.js"></script>
-
-    </body>
-
+             <script src="teamSection.js"></script>
+          <!-- Tyewriter js-->
+    <script src="typewriter.js"></script>
+   
+    
+</body>
 </html>
+

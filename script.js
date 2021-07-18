@@ -20,11 +20,26 @@ $(document).ready(function () {
       $(".sidebar").removeClass("animate__slideInRight hidden-xs");
       $(".sidebar").addClass("animate__slideOutRight");
       $(".sidebar-item").removeClass("active");
+      $("#bg-blur").removeClass("animate__fadeIn");
+      $("#bg-blur").addClass("animate__fadeOut");
+      setTimeout(()=>{
+      $("#bg-blur").height("0");
+      $("#bg-blur").addClass("d-none");
+      },300)
+     
+
     } else {
       $(".button").addClass("active");
       $(".sidebar").removeClass("animate__slideOutRight hidden-xs");
       $(".sidebar").addClass("animate__slideInRight");
       $(".sidebar-item").addClass("active");
+      $("#bg-blur").height($(document).height());
+      $("#bg-blur").removeClass("animate__fadeOut");
+      $("#bg-blur").addClass("animate__fadeIn");
+      $("#bg-blur").removeClass("d-none");
+  
+
+
     }
   }
 

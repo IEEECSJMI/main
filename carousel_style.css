@@ -20,10 +20,8 @@
     color: rgb(255, 255, 255);
     font-size: 6.25rem;
     margin: 1.25rem 0;
-    border-radius: 20px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.10);
-    /* box-shadow: 0 8px 10px 0 rgba(103, 111, 216, 0.37); */
     backdrop-filter: blur(10.0px);
     -webkit-backdrop-filter: blur(10.0px);
     border-radius: 10px;
@@ -69,17 +67,51 @@
 .owl-prev {
     position: absolute;
     top: 45%;
-    left: 00%;
+    left: -1%;
     transform: translate(-50%, -40%);
+}
+
+.owl-prev span {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+
+.owl-prev span:hover,
+.owl-prev span:active {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: white;
+    color: rgb(148, 138, 138);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.63);
 }
 
 .owl-next {
     position: absolute;
     top: 45%;
-    left: 100%;
+    left: 101%;
     transform: translate(-50%, -40%);
 }
 
+.owl-next span {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.owl-next span:hover {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #eeeef1;
+    color: rgb(148, 138, 138);
+    box-shadow: -3px 3px 5px rgba(255, 255, 255, 0.63);
+
+}
+
+.owl-next span:active {
+    color: #09090a;
+}
 
 /************ CARD PHOTO ************/
 

@@ -78,13 +78,16 @@
 }
 
 
-.owl-prev span:hover,
-.owl-prev span:active {
+.owl-prev span:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     background: white;
     color: rgb(148, 138, 138);
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.63);
+}
+
+.owl-prev span:active {
+    color: #09090a;
 }
 
 .owl-next {

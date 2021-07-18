@@ -1,0 +1,117 @@
+/************ OVERALL WRAPPER SETUP ************/
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .carousel {
+    max-width: 70%;
+    margin: auto;
+    padding: 12vh 20px;
+}
+
+/************ CARD SETTINGS ************/
+
+.carousel .card {
+    height: 60vh !important;
+    line-height: 30%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 6.25rem;
+    margin: 1.25rem 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.10);
+    /* box-shadow: 0 8px 10px 0 rgba(103, 111, 216, 0.37); */
+    backdrop-filter: blur(10.0px);
+    -webkit-backdrop-filter: blur(10.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+/************ NAV DOTS ************/
+
+.owl-dots {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.owl-dot {
+    width: 2vh;
+    height: 2vh;
+    margin: 0.3125rem 7px;
+    border: 3px solid rgb(255, 255, 255) !important;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: rgb(255, 255, 255) !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/************ NAV BUTTONS ************/
+
+.owl-nav {
+    display: block;
+    text-align: center;
+    z-index: -100;
+    font-size: 6vw;
+    color: rgb(255, 255, 255);
+}
+
+.owl-prev {
+    position: absolute;
+    top: 45%;
+    left: 00%;
+    transform: translate(-50%, -40%);
+}
+
+.owl-next {
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    transform: translate(-50%, -40%);
+}
+
+
+/************ CARD PHOTO ************/
+
+.card-photo img {
+    position: absolute;
+    width: 10.0208vw !important;
+    height: auto;
+    border-radius: 50%;
+    top: 35%;
+    left: 4%;
+    transform: translate(0%, -40%);
+    border: 1px solid black;
+    /*translate(horizontally,vertically)*/
+}
+
+/************ CARD NAME ************/
+.carousel .card-name h2 {
+    font-size: 1.5vw;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 60%;
+    left: 9%;
+    transform: translate(-12%, 0);
+}
+
+.carousel .card-content p {
+    width: 50vw;
+    margin: 0 10px;
+    font-size: 1vw;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+    /* border: 1px solid white; */
+}

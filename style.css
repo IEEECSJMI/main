@@ -39,15 +39,17 @@ body {
 background-color: black !important;
   font-family: "Raleway";
 }
-.bg-blur{
-  background: rgba( 255, 255, 255, 0.00 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2.0px );
--webkit-backdrop-filter: blur( 2.0px );
-z-index: 500;
-position: absolute;
-width: 100vw;
-background-color: rgba(0, 0, 0, 0.2);;
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0.00);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.0px);
+  -webkit-backdrop-filter: blur(2.0px);
+  z-index: 500;
+  position: absolute;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  ;
 }
 
 .fade-bg {

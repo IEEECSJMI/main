@@ -20,10 +20,8 @@
     color: rgb(255, 255, 255);
     font-size: 6.25rem;
     margin: 1.25rem 0;
-    border-radius: 20px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.10);
-    /* box-shadow: 0 8px 10px 0 rgba(103, 111, 216, 0.37); */
     backdrop-filter: blur(10.0px);
     -webkit-backdrop-filter: blur(10.0px);
     border-radius: 10px;
@@ -39,11 +37,12 @@
 }
 
 .owl-dot {
-    width: 2vh;
-    height: 2vh;
-    margin: 0.3125rem 7px;
-    border: 3px solid rgb(255, 255, 255) !important;
-    border-radius: 50%;
+    width: 4vh;
+    height: 5px;
+    margin: 0.3125rem 5px;
+    /* border: 1px solid rgb(255, 255, 255) !important; */
+    background: #fff !important;
+    /* border-radius: 50%; */
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
@@ -52,8 +51,8 @@
 
 .owl-dot:hover,
 .owl-dot.active {
-    background: rgb(255, 255, 255) !important;
-    border: 2px solid rgb(255, 255, 255) !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    /* border: 1px solid rgb(255, 255, 255,0.5) !important; */
 }
 
 /************ NAV BUTTONS ************/
@@ -69,49 +68,91 @@
 .owl-prev {
     position: absolute;
     top: 45%;
-    left: 00%;
+    left: -1%;
     transform: translate(-50%, -40%);
+}
+
+.owl-prev span {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+
+.owl-prev span:hover {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: white;
+    color: rgb(148, 138, 138);
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.63);
+}
+
+.owl-prev span:active {
+    color: #09090a;
 }
 
 .owl-next {
     position: absolute;
     top: 45%;
-    left: 100%;
+    left: 101%;
     transform: translate(-50%, -40%);
 }
 
+.owl-next span {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.owl-next span:hover {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #eeeef1;
+    color: rgb(148, 138, 138);
+    box-shadow: -3px 3px 5px rgba(255, 255, 255, 0.63);
+
+}
+
+.owl-next span:active {
+    color: #09090a;
+}
 
 /************ CARD PHOTO ************/
 
 .card-photo img {
-    position: absolute;
-    width: 10.0208vw !important;
+    /* position: absolute; */
+    width: 11vw !important;
     height: auto;
     border-radius: 50%;
-    top: 35%;
+    margin: auto;
+    /* top: 35%;
     left: 4%;
-    transform: translate(0%, -40%);
+    transform: translate(0%, -40%); */
     border: 1px solid black;
     /*translate(horizontally,vertically)*/
 }
 
 /************ CARD NAME ************/
-.carousel .card-name h2 {
-    font-size: 1.5vw;
-    /* border: 1px solid white; */
-    position: absolute;
-    top: 60%;
-    left: 9%;
-    transform: translate(-12%, 0);
+.card-name h4 {
+    margin-top: 1.5vh;
 }
 
+
 .carousel .card-content p {
-    width: 50vw;
-    margin: 0 10px;
+    /* width: 40vw; */
+    margin: 4vh 0;
     font-size: 1vw;
-    position: absolute;
+    /* position: absolute;
     top: 30%;
-    left: 20%;
+    left: 20%; */
     text-align: left;
     /* border: 1px solid white; */
+}
+
+.main-contents {
+    margin: 5vh 0;
+}
+
+.designation {
+    margin: 6vh 0 2vh 0;
 }

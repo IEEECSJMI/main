@@ -10,13 +10,6 @@ $("#dsaTeamBtn").click(function () {
     $("#dsaTeam").slideToggle();
 });
 
-// This part is for the live-typing effect on the terminal of ML team
-
-const mlterminal = document.querySelectorAll(".terminal")
-for (let i = 0; i < mlterminal.length; i++) {
-    new TypeIt(mlterminal[i], {
-        speed: 50,
-        loop: false,
-        startDelay: 50
-    }).go();
-}
+$("#webdTeamBtn").click(function () {
+    $("#webdTeam").slideToggle();
+});

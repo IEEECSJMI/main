@@ -200,64 +200,311 @@
         <!-- ML Team -->
         <section class="page">
             <div class="container-fluid row teamsIntro">
-
-                <div class="col-8">
-                    <!-- Team name -->
-                    <div class="row">
-                        <h2>ML</h2>
-                    </div>
-                    <!-- Intro -->
-                    <div class="row">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
-                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
-                        tempora
-                        dicta, iusto voluptate labore aspernatur quod.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
-                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
-                        tempora
-                        dicta, iusto voluptate labore aspernatur quod.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
-                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
-                        tempora
-                        dicta, iusto voluptate labore aspernatur quod.
-                    </div>
+                <!-- Team name -->
+                <div class="row" style="margin-top: 5vh;">
+                    <h2>ML</h2>
                 </div>
-                <!-- The section on the right which contains the terminal -->
-                <div class="col-4">
-                    <div class="terminal-window row">
-                        <header>
-                            <div class="button green"></div>
-                            <div class="button yellow"></div>
-                            <div class="button red"></div>
-                        </header>
-                        <section class="terminal">
-                            <span class="const">import</span>
-                            <span class="package">tensorflow</span> as <span class="name-require">tf</span>
-                            <br>
-                            <span class="package">tf</span>.<span class="require">keras</span>.<span
-                                class="dot">model</span> = <span class="package">tf</span>.<span
-                                class="require">keras</span>.<span class="dot">Sequential</span>()
-                            <br>
-                            <span class="package">tf</span>.<span class="require">keras</span>.<span
-                                class="dot">model</span>.<span class="name-require">add</span> ( <span
-                                class="package">tf</span>.<span class="require">keras</span>.<span
-                                class="dot">layers</span>.<span class="name-require">GRU</span> ( <span
-                                class="package">32</span>, <span class="require">input_shape</span> = ( <span
-                                class="package">None</span>, <span class="require">float_data</span>.<span
-                                class="name-require">shape</span><span class="dot">[-1]</span> ))) ..
-                        </section>
+                <div class="row">
+                    <!-- Intro -->
+                    <div class="col-8" style="margin-top: 5vh;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
                     </div>
-                    <div class="row">
-                        <button class="btn btn-outline-dark" id="mlTeamBtn">Team Members</button>
-                    </div>
+                    <!-- Terminal -->
+                    <div class="col-4">
+                        <div class="terminal-window row">
+                            <header>
+                                <div class="button green"></div>
+                                <div class="button yellow"></div>
+                                <div class="button red"></div>
+                            </header>
+                            <code class="terminal">
+                                <span class="const">import</span>
+                                <span class="package">tensorflow</span> as <span class="name-require">tf</span>
+                                <br>
+                                <span class="package">tf</span>.<span class="require">keras</span>.<span
+                                    class="dot">model</span> = <span class="package">tf</span>.<span
+                                    class="require">keras</span>.<span class="dot">Sequential</span>()
+                                <br>
+                                <span class="package">tf</span>.<span class="require">keras</span>.<span
+                                    class="dot">model</span>.<span class="name-require">add</span> ( <span
+                                    class="package">tf</span>.<span class="require">keras</span>.<span
+                                    class="dot">layers</span>.<span class="name-require">GRU</span> ( <span
+                                    class="package">32</span>, <span class="require">input_shape</span> = ( <span
+                                    class="package">None</span>, <span class="require">float_data</span>.<span
+                                    class="name-require">shape</span><span class="dot">[-1]</span> ))) ..
+                            </code>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-outline-dark" id="mlTeamBtn">Team Members</button>
+                        </div>
+                    </div>    
                 </div>
                 <!-- Images of the ML team members -->
                 <div class="container-fluid row teamMembers" id="mlTeam">
-                    <img class="teamMemberImg" src="img/RASHID.jpg" alt="" />
-                    <img class="teamMemberImg" src="img/FARHAN.jpg" alt="" />
-                    <img class="teamMemberImg" src="img/SARA.jpg" alt="" />
-                    <img class="teamMemberImg" src="img/TAHIR.jpg" alt="" />
-                    <img class="teamMemberImg" src="img/SARFARAZ.jpg" alt="" />
+                    <!-- Abbas -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/ABBAS.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Abbas Something</p>
+                        </div>
+                    </div>
+                    <!-- Farhan -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/FARHAN.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Farhan Yadav</p>
+                        </div>
+                    </div>
+                    <!-- Tahir -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/TAHIR.png" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Tahir Reyaz</p>
+                        </div>
+                    </div>
+                    <!-- Ayaz -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/AYAZ.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Ayaz Zia Ansari</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DSA Team -->
+        <section class="page">
+            <div class="container-fluid row teamsIntro">
+                <!-- Team name -->
+                <div class="row" style="margin-top: 5vh;">
+                    <h2>DSA</h2>
+                </div>
+                <div class="row">
+                    <!-- Terminal -->
+                    <div class="col-4">
+                        <div class="terminal-window row">
+                            <header>
+                                <div class="button green"></div>
+                                <div class="button yellow"></div>
+                                <div class="button red"></div>
+                            </header>
+                            <code class="terminal">
+                                <span class="const">string</span> <span class="package">topo_sort</span> (<span
+                                    class="const">list</span> &lt;<span class="require">int</span>&gt;* <span
+                                    class="name-require">ls</span>, <span class="const">int</span> <span
+                                    class="name-require">k</span>) {
+                                <br>
+                                &nbsp;&nbsp;<span class="const">char</span> <span class="package">arr</span>[<span
+                                    class="name-require">k</span>];
+                                <span class="const">stack</span> &lt;<span class="require">int</span>&gt; <span
+                                    class="package">s</span>;
+                                <br>
+                                &nbsp;&nbsp;<span class="const">set</span> &lt;<span class="package">int</span>&gt; <span
+                                    class="require">st</span>;
+                                <span class="const">int</span> <span class="package">ind</span> = <span
+                                    class="require">k</span>-<span class="name-require">1</span>;
+                                <br>
+                                &nbsp;&nbsp;<span class="const">for</span> (<span class="name-require">int</span> <span
+                                    class="require">i</span> = <span class="require">k</span>-<span class="require">1</span>;
+                                <span class="require">i</span> >= <span class="const">0</span>; <span
+                                    class="name-require">i</span>--) {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="const">if </span> (<span class="require">st</span>.<span
+                                    class="name-require">find</span>(<span class="require">i</span>) == <span
+                                    class="require">st</span>.<span class="name-require">end</span>()) { ..
+                            </code>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-outline-dark" id="dsaTeamBtn">Team Members</button>
+                        </div>
+                    </div>    
+                    <!-- Intro -->
+                    <div class="col-8" style="margin-top: 5vh;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                    </div>
+                </div>
+                <!-- Images of the DSA team members -->
+                <div class="container-fluid row teamMembers" id="dsaTeam" style="margin-left: 40vw;">
+                    <!-- Rashid -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/RASHID.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Rashid Hussain</p>
+                        </div>
+                    </div>
+                    <!-- Farhan -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/FARHAN.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Farhan Yadav</p>
+                        </div>
+                    </div>
+                    <!-- Sara -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/SARA.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Sararara</p>
+                        </div>
+                    </div>
+                    <!-- Tahir -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/TAHIR.png" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Tahir Reyaz</p>
+                        </div>
+                    </div>
+                    <!-- Sarfraz -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/SARFARAZ.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Sarfraz Dhokha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WebD Team -->
+        <section class="page">
+            <div class="container-fluid row teamsIntro">
+                <!-- Team name -->
+                <div class="row" style="margin-top: 5vh;">
+                    <h2>WebD</h2>
+                </div>
+                <!-- Intro and Terminal -->
+                <div class="row">
+                    <!-- Intro -->
+                    <div class="col-8" style="margin-top: 5vh;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quod velit, tempore dolor
+                        accusamus, error cupiditate magni voluptates, nihil animi expedita eligendi. Deserunt
+                        tempora
+                        dicta, iusto voluptate labore aspernatur quod.
+                    </div>
+                    <!-- Terminal and Button -->
+                    <div class="col-4">
+                        <!-- Terminal -->
+                        <div class="terminal-window row">
+                            <header>
+                                <div class="button green"></div>
+                                <div class="button yellow"></div>
+                                <div class="button red"></div>
+                            </header>
+                            <code class="terminal">
+                                <span class="const">const</span> <span class="package">express</span> = <span
+                                    class="require">require</span>(<span class="name-require">'express'</span>);
+                                <br>
+                                <span class="const">const</span> <span class="package">app</span> = <span
+                                    class="require">express</span>();
+                                <br>
+                                <span class="package">app</span>.<span class="dot">listen</span>(<span
+                                    class="require">process.env.PORT</span>, () <span class="package">=> </span>{
+                                <br>
+                                &nbsp;&nbsp;<span class="package">console</span>.<span class="dot">log</span>(<span
+                                    class="name-require">'server started'</span>);
+                                <br>
+                                }); ..
+                            </code>
+                        </div>
+                        <!-- Button -->
+                        <div class="row">
+                            <button class="btn btn-outline-dark" id="webdTeamBtn">Team Members</button>
+                        </div>
+                    </div>    
+                </div>
+                <!-- Images of the WebD team members -->
+                <div class="container-fluid row teamMembers" id="webdTeam">
+                    <!-- Rashid -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/RASHID.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Rashid Hussain</p>
+                        </div>
+                    </div>
+                    <!-- Farhan -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/FARHAN.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Farhan Yadav</p>
+                        </div>
+                    </div>
+                    <!-- Sara -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/SARA.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Sararara</p>
+                        </div>
+                    </div>
+                    <!-- Tahir -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/TAHIR.png" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Tahir Reyaz</p>
+                        </div>
+                    </div>
+                    <!-- Sarfraz -->
+                    <div class="col">
+                        <div class="row">
+                            <img class="teamMemberImg" src="img/SARFARAZ.jpg" alt="" />
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <p>Sarfraz Dhokha</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

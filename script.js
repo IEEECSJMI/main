@@ -43,7 +43,7 @@ $(document).ready(function () {
     }
   }
 
-  $(".button").on("click tap", function () {
+  $(".nav-right .button").on("click tap", function () {
     toggleSidebar();
   });
   $(".sidebar-item").on("click tap", function () {
@@ -88,14 +88,14 @@ let isContactFormOpen = false;
 function toggleContactUs() {
   if (isContactFormOpen) {
     $("#contact-us form").removeClass("animate__flipInX");
-    $("#contact-us form").addClass("animate__flipOutX");
+    $("#contact-us form").addClass("animate-height-zero");
     setTimeout(function () {
       $("#contact-us form").addClass("d-none");
     }, 1000);
     isContactFormOpen = false;
   } else {
-    $("#contact-us form").removeClass("animate__flipOutX d-none");
-    $("#contact-us form").addClass("animate__flipInX");
+    $("#contact-us form").removeClass("animate-height-zero d-none");
+    $("#contact-us form").addClass("");
     isContactFormOpen = true;
   }
 }

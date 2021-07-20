@@ -34,9 +34,9 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #29323c, #485563);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-color: #000000 !important;
+  /* background-color: #000000 !important; */
 
-
+background-color: black !important;
   font-family: "Raleway";
 }
 .bg-blur{
@@ -61,8 +61,10 @@ select:focus {
 }
 
 .animate-height-zero {
-  width: 0;
-  transition: 1s;
+  background-color: #ffd523;
+  max-height: 100px !important;
+  transition: max-height 500ms ease-in !important;
+  overflow: hidden;
 }
 
 /* contact us */
@@ -76,6 +78,8 @@ select:focus {
 .contact-us-div form {
   width: min-content;
   max-width: 65ch;
+  max-height: fit-content;
+  transition: max-height 0.25s ease-out;
 
 }
 

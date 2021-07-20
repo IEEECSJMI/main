@@ -37,11 +37,12 @@
 }
 
 .owl-dot {
-    width: 2vh;
-    height: 2vh;
-    margin: 0.3125rem 7px;
-    border: 3px solid rgb(255, 255, 255) !important;
-    border-radius: 50%;
+    width: 4vh;
+    height: 5px;
+    margin: 0.3125rem 5px;
+    /* border: 1px solid rgb(255, 255, 255) !important; */
+    background: #fff !important;
+    /* border-radius: 50%; */
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
@@ -50,8 +51,8 @@
 
 .owl-dot:hover,
 .owl-dot.active {
-    background: rgb(255, 255, 255) !important;
-    border: 2px solid rgb(255, 255, 255) !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    /* border: 1px solid rgb(255, 255, 255,0.5) !important; */
 }
 
 /************ NAV BUTTONS ************/
@@ -78,13 +79,16 @@
 }
 
 
-.owl-prev span:hover,
-.owl-prev span:active {
+.owl-prev span:hover {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     background: white;
     color: rgb(148, 138, 138);
     box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.63);
+}
+
+.owl-prev span:active {
+    color: #09090a;
 }
 
 .owl-next {

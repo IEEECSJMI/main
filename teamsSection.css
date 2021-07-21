@@ -3,10 +3,6 @@
     --teamMembersBgColour: rgb(0, 0, 0, 0.6);
 }
 
-body {
-    /* background: #2c2e43; */
-}
-
 .teamsIntro {
     height: 97%;
     margin: 1vh 0 1vh;

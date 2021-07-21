@@ -1,11 +1,11 @@
 // Typing effect in cards
 const code = document.querySelectorAll("code")
-for(let i=0; i<code.length; i++){
-    new TypeIt(code[i], {
-        speed: 50,
-        loop: false,
-        startDelay: 50
-    }).go();    
+for (let i = 0; i < code.length; i++) {
+  new TypeIt(code[i], {
+    speed: 50,
+    loop: false,
+    startDelay: 50
+  }).go();
 }
 
 // navbar thingy
@@ -22,11 +22,11 @@ $(document).ready(function () {
       $(".sidebar-item").removeClass("active");
       $("#bg-blur").removeClass("animate__fadeIn");
       $("#bg-blur").addClass("animate__fadeOut");
-      setTimeout(()=>{
-      $("#bg-blur").height("0");
-      $("#bg-blur").addClass("d-none");
-      },300)
-     
+      setTimeout(() => {
+        $("#bg-blur").height("0");
+        $("#bg-blur").addClass("d-none");
+      }, 300)
+
 
     } else {
       $(".button").addClass("active");
@@ -37,13 +37,13 @@ $(document).ready(function () {
       $("#bg-blur").removeClass("animate__fadeOut");
       $("#bg-blur").addClass("animate__fadeIn");
       $("#bg-blur").removeClass("d-none");
-  
+
 
 
     }
   }
 
-  $(".button").on("click tap", function () {
+  $(".nav-right .button").on("click tap", function () {
     toggleSidebar();
   });
   $(".sidebar-item").on("click tap", function () {
@@ -88,14 +88,14 @@ let isContactFormOpen = false;
 function toggleContactUs() {
   if (isContactFormOpen) {
     $("#contact-us form").removeClass("animate__flipInX");
-    $("#contact-us form").addClass("animate__flipOutX");
+    $("#contact-us form").addClass("animate-height-zero");
     setTimeout(function () {
       $("#contact-us form").addClass("d-none");
     }, 1000);
     isContactFormOpen = false;
   } else {
-    $("#contact-us form").removeClass("animate__flipOutX d-none");
-    $("#contact-us form").addClass("animate__flipInX");
+    $("#contact-us form").removeClass("animate-height-zero d-none");
+    $("#contact-us form").addClass("");
     isContactFormOpen = true;
   }
 }
@@ -122,12 +122,12 @@ function sendPostContent() {
         $(".toast-card").removeClass("d-none");
         $(".toast-card").addClass("animate__fadeIn");
         $(".toast-card").addClass("animate__fadeOut animate__delay-1s");
-        setTimeout(()=>{
-        $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");
-        $(".toast-card").addClass("d-none");
-        },1000)
+        setTimeout(() => {
+          $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");
+          $(".toast-card").addClass("d-none");
+        }, 1000)
 
-        
+
       })
       .catch((err) => console.log(err));
   }
@@ -135,4 +135,31 @@ function sendPostContent() {
   toggleContactUs();
 
   // toast thingy
+}
+
+// BACK TO TOP
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

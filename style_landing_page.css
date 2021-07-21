@@ -55,15 +55,16 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 .master{
-    background-color: var(--theme_fg_dark_two);
-    width: 500px;
-    height: 475px;
+    /* background-color: var(--theme_fg_dark_two); */
+    max-width: fit-content;
+    max-height: fit-content;
     padding: 15px;
     border-radius: 10px;
     position: relative;
 }
 .code-card{
     padding: 10px;
+    padding-bottom: 1rem;
     min-height: 170px;
     background-color: var(--theme_bg_dark);
     width: 350px;
@@ -85,18 +86,49 @@ code{
 .dot{color: #08a702;}
 
 .code-card:nth-child(1){
-    margin-left: -40px;
+    margin-left: auto;
+
+    margin-right: 10px;
     z-index: 3;
 }
 .code-card:nth-child(2){
+    margin-left: auto;
+
     margin-top: 1em;
-    margin-left: 180px;
-    z-index: 4;
+    margin-right: 180px;
+    z-index: 6;
 }
 .code-card:nth-child(3){
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 50px;
     margin-top: 1em;
-    z-index: 5;
+    z-index: 8;
+}
+@media (max-width:600px) {
+    .code-card:nth-child(1){
+        margin-right: 0;
+       
+    }
+    .code-card:nth-child(2){
+        
+        margin-right: 2em;
+        margin-top: -3rem;
+
+       
+    }
+    .code-card:nth-child(3){
+        margin-right: 0;
+
+      
+    }
+    .master{
+   
+        /* width: 90vw;
+        margin: auto; */
+    }
+    .code-card{
+        width: 85vw;
+    }
 }
 .brand-logo{
     height: 250px;

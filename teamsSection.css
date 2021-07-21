@@ -7,22 +7,11 @@ body {
     background: #2c2e43;
 }
 
-.page {
-    height: 100vh;
-}
-
 .teamsIntro {
-    height: 80vh;
-    margin: 10vh 0;
+    height: 97%;
+    margin: 1vh 0 1vh;
+    margin-bottom: 0;
     background-color: var(--teamsBgColour);
-}
-
-.col-8 {
-    height: 80vh;
-}
-
-.col-4 {
-    height: 80vh;
 }
 
 #mlTeamBtn, #dsaTeamBtn, #webdTeamBtn {
@@ -44,6 +33,43 @@ body {
     width: auto;
     margin: auto;
     border-radius: 100%;
+}
+
+/**********************************************TAB****************************************/
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    height: 90vh;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
 /************************************TERMINAL******************************************/

@@ -39,6 +39,9 @@ body::-webkit-scrollbar{
 .col-md-6{
     padding: 0 !important;
 }
+
+
+
 .main{
     height: 100vh;
     width: 100vw;

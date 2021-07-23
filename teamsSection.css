@@ -5,14 +5,20 @@
 
 .teamsIntro {
     height: 97%;
-    margin: 1vh 0 1vh;
     margin-bottom: 0;
     background-color: var(--teamsBgColour);
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+    background-image: url("/img/wave2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode:soft-light;
 }
 
 #mlTeamBtn, #dsaTeamBtn, #webdTeamBtn {
     width: auto;
     margin-top: 10vh;
+    z-index: 10;
 }
 
 .teamMembers {
@@ -34,8 +40,9 @@
 /**********************************************TAB****************************************/
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border: 1px solid var(--teamsBgColour);
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
 }
   
 /* Style the buttons that are used to open the tab content */
@@ -47,26 +54,60 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    color: var(--teamsBgColour)!important;
+
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: var(--teamsBgColour);
+    color:rgb(0, 0, 0, 0.6)!important;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: var(--teamsBgColour);
+    color:rgb(0, 0, 0, 0.6)!important;
+}
+
+.team-section{
+    margin-bottom: 100vh;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    position: absolute;
     height: 90vh;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
+    margin:0;
+    opacity: 0;
+    transition: all 0.7s;
 }
+
+.tab-fadein{
+    opacity: 1;
+}
+
+
+
+/* 
+@keyframes fadeout{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes fadein{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+} */
 
 /************************************TERMINAL******************************************/
 

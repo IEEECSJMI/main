@@ -113,3 +113,7 @@ select:focus {
   transform: translate(-50%, 0);
   z-index: 1200;
 }
+
+footer a {
+  text-decoration: none;
+}

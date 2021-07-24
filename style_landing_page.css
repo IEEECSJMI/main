@@ -56,11 +56,19 @@ body::-webkit-scrollbar{
 }
 .master{
     /* background-color: var(--theme_fg_dark_two); */
-    max-width: fit-content;
+    /* max-width: fit-content;
     max-height: fit-content;
     padding: 15px;
     border-radius: 10px;
+    position: relative; */
+    background-color: #79797926;
+    width: 500px;
+    height: 475px;
+    padding: 15px;
+    border-radius: 10px;
     position: relative;
+    float: right;
+    margin-right: 30px;
 }
 .code-card{
     padding: 10px;

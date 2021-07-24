@@ -131,3 +131,7 @@
 .terminal-window .green {
     color: green;
 }
+
+@media only screen and (max-width: 500px) {
+    .terminal-window {display: none;}
+}

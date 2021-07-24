@@ -1,6 +1,7 @@
 
 
 .list-unstyled a{
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: underline;
     display: inline-block;
     line-height: 200%;

@@ -3,10 +3,6 @@
     --teamMembersBgColour: rgb(0, 0, 0, 0.6);
 }
 
-body {
-    /* background: #2c2e43; */
-}
-
 .page {
     height: 100vh;
 }

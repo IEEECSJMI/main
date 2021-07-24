@@ -42,9 +42,6 @@ body::-webkit-scrollbar{
 .main{
     height: 100vh;
     width: 100vw;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     padding: 70px;
     position: relative;
 }
@@ -55,8 +52,7 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 .master{
-    /* background-color: var(--theme_fg_dark_two); */
-    /* max-width: fit-content;
+    max-width: fit-content;
     max-height: fit-content;
     padding: 15px;
     border-radius: 10px;
@@ -83,10 +79,8 @@ body::-webkit-scrollbar{
     box-shadow: 0px 0px 25px 2px #000000;
     margin-bottom: -30px;
 }
-code{
-    color: white;
-    /* font-family: monospace; */
-}
+
+code{color: white;}
 .const{color: #e062ff;}
 .package{color: #2accfd;}
 .require{color: #fdcf00;}
@@ -95,13 +89,11 @@ code{
 
 .code-card:nth-child(1){
     margin-left: auto;
-
     margin-right: 10px;
     z-index: 3;
 }
 .code-card:nth-child(2){
     margin-left: auto;
-
     margin-top: 1em;
     margin-right: 180px;
     z-index: 6;
@@ -111,32 +103,6 @@ code{
     margin-right: 50px;
     margin-top: 1em;
     z-index: 8;
-}
-@media (max-width:600px) {
-    .code-card:nth-child(1){
-        margin-right: 0;
-       
-    }
-    .code-card:nth-child(2){
-        
-        margin-right: 2em;
-        margin-top: -3rem;
-
-       
-    }
-    .code-card:nth-child(3){
-        margin-right: 0;
-
-      
-    }
-    .master{
-   
-        /* width: 90vw;
-        margin: auto; */
-    }
-    .code-card{
-        width: 85vw;
-    }
 }
 .brand-logo{
     height: 250px;
@@ -149,11 +115,24 @@ code{
 @media (max-width: 768px){
     .main{
         padding: 0;
+        margin: 0;
+        height: auto;
+        margin-bottom: -50px;
     }
     .brand-logo{
         height: 150px;
     }
     .intro-description{
         font-size: 1em;
+    }
+    .left{
+        margin: 20px;
+    }
+    body{
+        padding: 0;
+    }
+    .code-card{
+        width: 100%;
+        margin: 0 auto 0 auto;
     }
 }

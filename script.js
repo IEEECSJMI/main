@@ -122,6 +122,10 @@ function sendPostContent() {
         $(".toast-card").removeClass("d-none");
         $(".toast-card").addClass("animate__fadeIn");
         $(".toast-card").addClass("animate__fadeOut animate__delay-1s");
+        $("#contact-us input").val("");
+        $("#contact-us textarea").val("");
+
+
 
         setTimeout(() => {
           $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");

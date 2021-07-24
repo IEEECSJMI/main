@@ -22,3 +22,7 @@ function openTeam(evt, teamName) {
   document.getElementById(teamName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// /////////////////////////////////////////////////////////////
+// ALIGNING TEAMS SECTION
+////////////////// /////////////////////////////////////////////

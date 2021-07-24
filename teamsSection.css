@@ -131,7 +131,26 @@
 .terminal-window .green {
   color: green;
 }
+.teamMembers {
+  width: auto;
+  margin-top: 4.25rem;
+  color: rgb(201, 201, 201);
+  padding: 5px;
+}
 
 @media only screen and (max-width: 500px) {
-  .terminal-window {display: none;}
+  .tabcontent {
+    height: auto;
+  }
+  .terminal-window {
+    display: none;
+  }
+  .tabcontent .teamsIntro .col-8 {
+    width: 100% !important;
+  }
+  .teamMembers {
+    height: auto;
+    width: 120%;
+    margin-bottom: 25px;
+  }
 }

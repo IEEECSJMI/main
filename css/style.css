@@ -118,3 +118,8 @@ select:focus {
 footer a {
   text-decoration: none;
 }
+
+#btn .bar {
+  background-color: rgb(179, 184, 187);
+}
+

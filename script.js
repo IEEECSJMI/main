@@ -79,18 +79,23 @@ $(".carousel").owlCarousel({
 
 // Contact us thingy
 let isContactFormOpen = false;
+$("#contact-us form").hide();
 
-function toggleContactUs() {
+function toggleContactUs(sendingMsg = false) {
   if (isContactFormOpen) {
-    $("#contact-us form").removeClass("animate__flipInX");
-    $("#contact-us form").addClass("animate-height-zero");
-    setTimeout(function () {
-      $("#contact-us form").addClass("d-none");
-    }, 1000);
+    $("#contact-us form").removeClass("animate__fadeIn");
+    if (sendingMsg) {
+      $("#contact-us form").addClass("animate__backOutUp");
+    }
+    $("#contact-us form").slideToggle();
     isContactFormOpen = false;
   } else {
-    $("#contact-us form").removeClass("animate-height-zero d-none");
-    $("#contact-us form").addClass("");
+    $("#contact-us form").removeClass("animate__backOutUp");
+
+    $("#contact-us form").addClass("animate__fadeIn");
+
+    $("#contact-us form").slideToggle();
+
     isContactFormOpen = true;
   }
 }
@@ -117,15 +122,24 @@ function sendPostContent() {
         $(".toast-card").removeClass("d-none");
         $(".toast-card").addClass("animate__fadeIn");
         $(".toast-card").addClass("animate__fadeOut animate__delay-1s");
+        $("#contact-us input").val("");
+        $("#contact-us textarea").val("");
+
+
+
         setTimeout(() => {
           $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");
           $(".toast-card").addClass("d-none");
+<<<<<<< HEAD
         }, 1000);
+=======
+        }, 3000);
+>>>>>>> 0ce5fad3f6b3a407afd215e9afb266556c57c8ba
       })
       .catch((err) => console.log(err));
   }
 
-  toggleContactUs();
+  toggleContactUs(true);
 
   // toast thingy
 }

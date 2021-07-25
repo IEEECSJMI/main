@@ -1,0 +1,15 @@
+.list-unstyled a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+    display: inline-block;
+    line-height: 200%;
+    transform: scale(100%);
+    transition: transform 0.3s,color 0.3s ;
+}
+
+.list-unstyled a:hover{
+    text-decoration: none;
+    display: inline-block;
+    transform: scale(110%);
+    color: #ffda33 !important;
+}

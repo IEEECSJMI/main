@@ -1,0 +1,181 @@
+/************ OVERALL WRAPPER SETUP ************/
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .carousel {
+  max-width: 70%;
+  margin: auto;
+  padding: 12vh 20px;
+}
+
+/************ CARD SETTINGS ************/
+
+.carousel .card {
+  height: 60vh !important;
+  line-height: 30%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 6.25rem;
+  margin: 1.25rem 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/************ NAV DOTS ************/
+
+.owl-dots {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.owl-dot {
+  width: 4vh;
+  height: 5px;
+  margin: 0.3125rem 5px;
+  /* border: 1px solid rgb(255, 255, 255) !important; */
+  background: #fff !important;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+  background: rgba(255, 255, 255, 0.5) !important;
+  /* border: 1px solid rgb(255, 255, 255,0.5) !important; */
+}
+
+/************ NAV BUTTONS ************/
+
+.owl-nav {
+  display: block;
+  text-align: center;
+  z-index: -100;
+  font-size: 6vw;
+  color: rgb(255, 255, 255);
+}
+
+.owl-prev {
+  position: absolute;
+  top: 45%;
+  left: -1%;
+  transform: translate(-50%, -40%);
+}
+
+.owl-prev span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.owl-prev span:hover {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: white;
+  color: rgb(148, 138, 138);
+  box-shadow: 0 0 5px rgba(26, 26, 26, 0.63);
+}
+
+.owl-prev span:active {
+  color: #09090a;
+}
+
+.owl-next {
+  position: absolute;
+  top: 45%;
+  left: 101%;
+  transform: translate(-50%, -40%);
+}
+
+.owl-next span {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.owl-next span:hover {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: #eeeef1;
+  color: rgb(148, 138, 138);
+  box-shadow: 0 0 5px rgba(26, 26, 26, 0.63);
+}
+
+.owl-next span:active {
+  color: #09090a;
+}
+
+/************ CARD PHOTO ************/
+
+.card-photo img {
+  /* position: absolute; */
+  width: 11vw !important;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+  /* top: 35%;
+    left: 4%;
+    transform: translate(0%, -40%); */
+  border: 1px solid black;
+  /*translate(horizontally,vertically)*/
+}
+
+/************ CARD NAME ************/
+.card-name h4 {
+  margin-top: 1.5vh;
+}
+
+.carousel .card-content p {
+  /* width: 40vw; */
+  margin: 4vh 0;
+  font-size: 1vw;
+  /* position: absolute;
+    top: 30%;
+    left: 20%; */
+  text-align: left;
+  /* border: 1px solid white; */
+}
+
+.main-contents {
+  margin: 5vh 0;
+}
+
+.designation {
+  margin: 6vh 0 2vh 0;
+}
+
+@media (max-width: 480px) {
+  .owl-next,
+  .owl-prev {
+    display: none;
+  }
+  .owl-dots {
+    margin-top: 0;
+  }
+  .owl-dot {
+    margin-top: 15px;
+  }
+  .wrapper .carousel {
+    max-width: 100% !important;
+    padding: 5px 20px;
+  }
+  .carousel .card {
+    height: auto !important;
+    width: 100% !important;
+    line-height: 1.2;
+  }
+  .main-contents {
+    margin: 15px 0;
+  }
+  .carousel .card-content p {
+    font-size: 15px;
+  }
+}

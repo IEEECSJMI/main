@@ -19,29 +19,30 @@ $(window).scroll(function() {
 //////////////////////////// TABS ////////////////////////////
 
 // Show the default tab on load
-$("#mlTeamTabButton").click();
+$("#mlTeamButton").click();
 
 // Function for setting the events on tab button click
 function openTeam(evt, teamName) {
   // Declare all variables
   var i, tabcontent, tablinks;
-
+  console.log(teamName);
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+  $(".tabcontent").css({display : "none"});
 
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+  $(".tablinks").removeClass("active");
 
   // Show the current tab, and add an "active" class to the button that opened the tab
+  
   document.getElementById(teamName).style.display = "block";
-  evt.currentTarget.className += " active";
 
+  let teamtab = teamName.replace("Container","");
+
+  $("#" + teamtab + "Button").addClass("active");
+
+  
   // FadeIn the current tab's team members
   if(teamName == "mlTeamContainer" && visible) {
     $("#mlTeam").fadeIn();

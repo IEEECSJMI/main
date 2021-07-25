@@ -181,12 +181,12 @@
     </button>
 
         <!-- Teams Section -->
-        <section>
+        <section id="teamsSection">
             <!-- Tab links -->
             <div class="tab">
-                <button class="tablinks" onclick="openTeam(event, 'mlTeamContainer')" id="mlTeamTabButton">ML/AI</button>
-                <button class="tablinks" onclick="openTeam(event, 'dsaTeamContainer')">DSA</button>
-                <button class="tablinks" onclick="openTeam(event, 'webdTeamContainer')">Web-Dev</button>
+                <button class="tablinks" onclick="openTeam(event, 'mlTeamContainer')" id="mlTeamButton">ML/AI</button>
+                <button class="tablinks" onclick="openTeam(event, 'dsaTeamContainer')" id="dsaTeamButton">DSA</button>
+                <button class="tablinks" onclick="openTeam(event, 'webdTeamContainer')" id="webdTeamButton">Web-Dev</button>
             </div>
 
             <!-- Tab content -->
@@ -641,7 +641,7 @@
         <footer class="text-center text-lg-start text-white">
             <div class="container p-4 pb-0">
                 
-                <div class="row justify-content-evenly">
+                <div class="row justify-content-evenly" id="tabs">
                     <div class="col-md-8 text-center">
                         <h5 class="text-uppercase">IEEE CS JMI</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Molestiae modi cum ipsam ad, illo possimus laborum utreiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?Reiciendis assumenda iusto sapiente inventore animi?</p>
@@ -649,9 +649,9 @@
                     <div class="text-center col-md-3">
                         <ul class="list-unstyled mb-0">
                             <li style="font-size: 1.2rem; font-weight: 500;">OUR TEAMS</li>
-                            <li><a href="#!" class="text-white footer-link" style="text-decoration: none;">DSA</a></li>
-                            <li><a href="#!" class="text-white footer-link" style="text-decoration: none;">Machine Learning</a></li>
-                            <li><a href="#!" class="text-white footer-link" style="text-decoration: none;">Web Development</a></li>
+                            <li><a href="#teamsSection" class="text-white footer-link" style="text-decoration: none;" onclick="openTeam(event, 'mlTeamContainer')">DSA</a></li>
+                            <li><a href="#teamsSection" class="text-white footer-link" style="text-decoration: none;" onclick="openTeam(event, 'dsaTeamContainer')">Machine Learning</a></li>
+                            <li><a href="#teamsSection" class="text-white footer-link" style="text-decoration: none;" onclick="openTeam(event, 'webdTeamContainer')">Web Development</a></li>
                         </ul>
                     </div>
                 </div>

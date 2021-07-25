@@ -1,10 +1,10 @@
 // Typing effect in cards
-const code = document.querySelectorAll("code")
+const code = document.querySelectorAll("code");
 for (let i = 0; i < code.length; i++) {
   new TypeIt(code[i], {
     speed: 50,
     loop: false,
-    startDelay: 50
+    startDelay: 50,
   }).go();
 }
 
@@ -25,9 +25,7 @@ $(document).ready(function () {
       setTimeout(() => {
         $("#bg-blur").height("0");
         $("#bg-blur").addClass("d-none");
-      }, 300)
-
-
+      }, 300);
     } else {
       $(".button").addClass("active");
       $(".sidebar").removeClass("animate__slideOutRight hidden-xs");
@@ -37,9 +35,6 @@ $(document).ready(function () {
       $("#bg-blur").removeClass("animate__fadeOut");
       $("#bg-blur").addClass("animate__fadeIn");
       $("#bg-blur").removeClass("d-none");
-
-
-
     }
   }
 
@@ -125,9 +120,7 @@ function sendPostContent() {
         setTimeout(() => {
           $(".toast-card").removeClass("animate__fadeIn animate__fadeOut");
           $(".toast-card").addClass("d-none");
-        }, 1000)
-
-
+        }, 1000);
       })
       .catch((err) => console.log(err));
   }
@@ -147,10 +140,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

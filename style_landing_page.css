@@ -147,6 +147,9 @@ code {
   text-align: center;
   font-size: 1.1em;
 }
+#btn .bar {
+  background-color: #c2c2c2;
+}
 @media (max-width: 768px) {
   .main {
     padding: 0;

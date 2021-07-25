@@ -56,7 +56,15 @@ body::-webkit-scrollbar{
     max-height: fit-content;
     padding: 15px;
     border-radius: 10px;
+    position: relative; 
+    background-color: #79797926;
+    width: 500px;
+    height: 475px;
+    padding: 15px;
+    border-radius: 10px;
     position: relative;
+    float: right;
+    margin-right: 30px;
 }
 .code-card{
     padding: 10px;

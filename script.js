@@ -84,18 +84,23 @@ $(".carousel").owlCarousel({
 
 // Contact us thingy
 let isContactFormOpen = false;
+$("#contact-us form").hide()
+
 
 function toggleContactUs() {
   if (isContactFormOpen) {
-    $("#contact-us form").removeClass("animate__flipInX");
-    $("#contact-us form").addClass("animate-height-zero");
-    setTimeout(function () {
-      $("#contact-us form").addClass("d-none");
-    }, 1000);
+    // $("#contact-us form").removeClass("animate__flipInX");
+    // $("#contact-us form").addClass("animate-height-zero");
+    // setTimeout(function () {
+    //   $("#contact-us form").addClass("d-none");
+    // }, 1000);
+    $("#contact-us form").slideToggle()
     isContactFormOpen = false;
   } else {
-    $("#contact-us form").removeClass("animate-height-zero d-none");
-    $("#contact-us form").addClass("");
+    // $("#contact-us form").removeClass("animate-height-zero d-none");
+    // $("#contact-us form").addClass("");
+    $("#contact-us form").slideToggle()
+
     isContactFormOpen = true;
   }
 }

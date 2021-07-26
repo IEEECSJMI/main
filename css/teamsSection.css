@@ -129,6 +129,12 @@
   animation: blink 0.7s infinite;
 }
 
+.terminal {
+  color: white;
+  font: Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+}
+
 .terminal-window .gray {
   color: gray;
 }

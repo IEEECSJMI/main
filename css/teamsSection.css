@@ -20,14 +20,13 @@
   height: 20vh;
   width: 60vw;
   border-radius: 8px;
-  background-color: var(--teamMembersBgColour);
+  background-color: rgba(201, 201, 201, 0.253);
   padding: 1vh;
 }
 
 .teamMemberImg {
-  height: 15vh;
-  width: auto;
-  margin: auto;
+  width: 100px;
+    margin: auto;
   border-radius: 100%;
 }
 
@@ -52,6 +51,10 @@
   padding: 14px 16px;
   transition: 0.3s;
   color: #ffd523;
+}
+
+.tabcontent p{
+  color: black;
 }
 
 /* Change background color of buttons on hover */

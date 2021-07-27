@@ -30,10 +30,24 @@
 
 body {
   background-color: var(--theme_bg_dark);
+  overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
+::-webkit-scrollbar{
+  width: 7px;
+  height: 7px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: #bb6a0e;
+  border-radius: 28px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: #7D4300;
+  }
+  ::-webkit-scrollbar-track{
+  background: #00000049;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
 /* Main part Starts here */
 .col-md-6 {
   padding: 0 !important;
